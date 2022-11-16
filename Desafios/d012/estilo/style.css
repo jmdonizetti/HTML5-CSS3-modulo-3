@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'Cursive';
+    --fonte3: 'Rubik Bubbles', cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header > h1{
     padding-top: 50px;
     font-variant: small-caps; /*Deixa em letra maiuscula*/
+    font-family: var(--fonte2);
+    font-size: 5vw;
 }
 
 header > p{
@@ -40,11 +53,13 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2.5vw;
 }
 
 section.normal{
     background-color: white;
     color: black;
+    font-family: var(--fonte3);
 }
 
 section.imagem{
@@ -53,8 +68,10 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
+    font-family: var(--fonte3);
 }
 
 footer{
